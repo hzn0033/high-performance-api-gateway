@@ -12,9 +12,9 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/heshwanth/high-performance-api-gateway/internal/config"
-	"github.com/heshwanth/high-performance-api-gateway/internal/gateway"
-	"github.com/heshwanth/high-performance-api-gateway/internal/ratelimit"
+	"github.com/hzn0033/high-performance-api-gateway/internal/config"
+	"github.com/hzn0033/high-performance-api-gateway/internal/gateway"
+	"github.com/hzn0033/high-performance-api-gateway/internal/ratelimit"
 	"github.com/redis/go-redis/v9"
 	"google.golang.org/grpc"
 )

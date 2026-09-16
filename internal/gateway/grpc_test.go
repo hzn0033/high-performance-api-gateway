@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/heshwanth/high-performance-api-gateway/internal/ratelimit"
+	"github.com/hzn0033/high-performance-api-gateway/internal/ratelimit"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials/insecure"
