@@ -1,0 +1,39 @@
+{
+  "all_requests_succeeded": true,
+  "concurrency": 16,
+  "downstream_reduction_percent": 40,
+  "note": "Synthetic two-phase workload. Latencies are end-to-end HTTP timings, not routing overhead. Run against an otherwise idle gateway.",
+  "results": [
+    {
+      "mode": "bypass",
+      "requests": 1000,
+      "successful": 1000,
+      "cache_hits": 0,
+      "upstream_requests": 1000,
+      "seconds": 0.429926291,
+      "requests_per_second": 2325.9801062038327,
+      "p50_ms": 6.649625,
+      "p95_ms": 7.937833,
+      "p99_ms": 13.642958,
+      "statuses": {
+        "200": 1000
+      }
+    },
+    {
+      "mode": "cached",
+      "requests": 1000,
+      "successful": 1000,
+      "cache_hits": 400,
+      "upstream_requests": 600,
+      "seconds": 0.287952584,
+      "requests_per_second": 3472.7939791642916,
+      "p50_ms": 6.15575,
+      "p95_ms": 7.456334,
+      "p99_ms": 9.44625,
+      "statuses": {
+        "200": 1000
+      }
+    }
+  ],
+  "unique_items": 600
+}

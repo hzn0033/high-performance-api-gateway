@@ -1,0 +1,15 @@
+{
+  "http_addr": ":8080",
+  "grpc_addr": ":9090",
+  "redis_addr": "localhost:6379",
+  "rate_per_second": 1000,
+  "burst": 2000,
+  "max_clients": 10000,
+  "max_concurrent": 1024,
+  "timeout_seconds": 10,
+  "cache_ttl_seconds": 30,
+  "http_routes": [
+    {"prefix": "/api", "upstream": "http://localhost:8081", "cache": true}
+  ],
+  "grpc_routes": {"grpc.health.v1.Health": "localhost:9091"}
+}
